@@ -39,12 +39,12 @@ body .main .nav .nav-item a {
 }
 body .main .nav .nav-item a:hover {
   text-decoration: none;
-  color: aqua;
+  color: darkcyan;
 }
 body .main .nav .nav-item.active {
-  border-bottom: 2px solid aqua;
+  border-bottom: 2px solid darkcyan;
 }
 body .main .nav .nav-item.active a {
-  color: aqua;
+  color: darkcyan;
 }
 /*# sourceMappingURL=index.css.map */
