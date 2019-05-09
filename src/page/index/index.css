@@ -47,4 +47,27 @@ body .main .nav .nav-item.active {
 body .main .nav .nav-item.active a {
   color: darkcyan;
 }
+body .main .note .note-item {
+  height: 70px;
+  border-bottom: 1px solid darkcyan;
+  cursor: pointer;
+}
+body .main .note .note-item:hover {
+  background-color: #ccc;
+  padding-top: 2px;
+}
+body .main .note .note-item .nav-item-title {
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+body .main .note .note-item .nav-item-content {
+  line-height: 30px;
+  font-size: 14px;
+  color: darkcyan;
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /*# sourceMappingURL=index.css.map */

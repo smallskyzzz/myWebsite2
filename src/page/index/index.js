@@ -69,12 +69,23 @@ var page = {
     // 根据active判断加载项
     choose: function (data) {
         console.log(data)
+        // note页
         if(data === 'note'){
+            $('.content').html()
+            $('.content').removeClass().addClass('content note')
             util.request({
                 url: '/api/getContent',
                 success: function (res) {
                     if(res.state){
-                        console.log(res)
+                        for(var i=0;i<res.results.length;i++) {
+                            var navItem = $('<div class="note-item">')
+                            var title = $('<h3 class="nav-item-title">')
+                            var content = $('<p class="nav-item-content">')
+                            title.html(res.results[i].title)
+                            content.html(res.results[i].content)
+                            navItem.append(title).append(content)
+                            $('.content').append($('<a>').append(navItem))
+                        }
                     }
                 }
             })

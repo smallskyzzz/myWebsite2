@@ -50,5 +50,30 @@ body{
 		.content{
 
 		}
+		.note{
+			.note-item{
+				height: 70px;
+				border-bottom: 1px solid darkcyan;
+				cursor: pointer;
+				&:hover{
+					background-color: #ccc;
+					padding-top: 2px;
+				}
+				.nav-item-title{
+					line-height: 40px;
+					font-weight: bold;
+					font-size: 20px;
+				}
+				.nav-item-content{
+					line-height: 30px;
+					font-size: 14px;
+					color: darkcyan;
+					padding-left: 20px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+		}
 	}
 }
